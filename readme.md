@@ -1,0 +1,4 @@
+This is an exercise for the Odin Project course.
+It should create a squared grid of empty HTML grids, with the number of divs per side selected by the user.
+The square will always use the same number of pixels.
+the divs should turn of a color when the mouse hover over them.
