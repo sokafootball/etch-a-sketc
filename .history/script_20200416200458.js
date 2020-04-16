@@ -14,5 +14,7 @@ for (let i = 1; i <= squaresPerSide; i++) {
 function getSizeFromUser() {
   let size
   do { size = Number(prompt(`How many squares per side?`)) }while (isNaN(size) || size == ``)
+  console.log(Number(size))
+  console.log(typeof(size))
   return size
 }

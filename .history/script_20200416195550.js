@@ -13,6 +13,8 @@ for (let i = 1; i <= squaresPerSide; i++) {
 //make sure the user input an integer
 function getSizeFromUser() {
   let size
-  do { size = Number(prompt(`How many squares per side?`)) }while (isNaN(size) || size == ``)
+  do { size = prompt(`How many squares per side?`) }while (Number(size) == NaN)
+  console.log(Number(size))
+  console.log(typeof(size))
   return size
 }
