@@ -1,8 +1,5 @@
 .cell {
   height: 50px;
-  display: inline-block;
   background-color: black;
-  color: white;
   width: 50px;
-  margin: 5px;
 }
