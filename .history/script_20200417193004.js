@@ -1,5 +1,5 @@
 const grid = document.querySelector(`#grid-div`)
-const squaresPerSide = getSizeFromUser()
+const squaresPerSide = 1
 for (let i = 1; i <= squaresPerSide; i++) {
   for (let j = 1; j <= squaresPerSide; j++) {
     const cell = document.createElement(`div`)
@@ -15,5 +15,5 @@ for (let i = 1; i <= squaresPerSide; i++) {
 function getSizeFromUser() {
   let size
   do { size = Number(prompt(`How many squares per side?`)) }while (isNaN(size) || size == ``)
-  return size
+  return sizegi
 }
