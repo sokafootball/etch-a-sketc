@@ -11,8 +11,8 @@ function createBoard(size){
       const pixelsPerSide = 960 / size
       cell.addEventListener("mouseenter", () => cell.style.backgroundColor = `red`);
       cell.classList.add(`cell`)
-      cell.style.width = pixelsPerSide
-      cell.style.height = pixelsPerSide
+
+      cell.style.width =
       grid.appendChild(cell)
     }
     const br = document.createElement(`br`)
