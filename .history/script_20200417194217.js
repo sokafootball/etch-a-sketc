@@ -25,8 +25,6 @@ function resetBoard(){
 function deleteBoard(){
   let cells = document.querySelectorAll(`.cell`)
   cells.forEach(cell => grid.removeChild(cell))
-  let breaks = document.querySelectorAll(`br`)
-  breaks.forEach(br => grid.removeChild(br))
 }
 
 function getSizeFromUser() {
