@@ -1,6 +1,6 @@
 const grid = document.querySelector(`#grid-div`)
 const resetButton = document.querySelector(`#reset-btn`)
-const GRID_PX_SIZE = 960
+const gridPxSize = 960
 resetButton.addEventListener(`click`, resetBoard)
 
 
@@ -8,11 +8,8 @@ function createBoard(size){
   for (let i = 1; i <= size; i++) {
     for (let j = 1; j <= size; j++) {
       const cell = document.createElement(`div`)
-      const pixelsPerSide = 960 / size
       cell.addEventListener("mouseenter", () => cell.style.backgroundColor = `red`);
       cell.classList.add(`cell`)
-      cell.style.width = pixelsPerSide
-      cell.style.height = pixelsPerSide
       grid.appendChild(cell)
     }
     const br = document.createElement(`br`)
