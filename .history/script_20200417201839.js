@@ -32,9 +32,9 @@ function deleteBoard(){
   let breaks = document.querySelectorAll(`br`)
   breaks.forEach(br => grid.removeChild(br))
 }
-
+//finche il risultato non e' un numero o non e0
 function getSizeFromUser() {
   let size
-  do { size = prompt(`How many squares per side?`) } while (isNaN(Number(size)) || size == ``)
-  return Number(size)
+  do { size = Number(prompt(`How many squares per side?`)) } while (isNaN(size) || size == `` || size != 0)
+  return size
 }

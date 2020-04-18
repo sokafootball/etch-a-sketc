@@ -35,6 +35,6 @@ function deleteBoard(){
 
 function getSizeFromUser() {
   let size
-  do { size = prompt(`How many squares per side?`) } while (isNaN(Number(size)) || size == ``)
-  return Number(size)
+  do { size = Number(prompt(`How many squares per side?`)) }while (size == null || isNaN(size) || size == ``)
+  return size
 }
