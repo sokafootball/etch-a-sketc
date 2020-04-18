@@ -55,7 +55,7 @@ footer{
 }
 
 #signature{
-  text-shadow: var(--main-color) 2px 2px;
+  text-shadow: var(--main-color) 1px 1px;
   font-size: 25px;
   font-weight: 800;
 }

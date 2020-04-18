@@ -1,7 +1,6 @@
 :root{
   --shadow-size: 3px;
   --main-color: hsla(90, 60%, 53%, 1);
-  --secondary-color: black;
 }
 
 body{
@@ -17,7 +16,7 @@ footer{
 }
 
 .cell {
-  background-color: var(--secondary-color);
+  background-color: black;
   display: inline-block;
 }
 
@@ -55,7 +54,5 @@ footer{
 }
 
 #signature{
-  text-shadow: var(--main-color) 2px 2px;
-  font-size: 25px;
-  font-weight: 800;
+  text-shadow: var(--main-color) var(--shadow-size) var(--shadow-size);
 }
