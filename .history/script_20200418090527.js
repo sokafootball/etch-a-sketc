@@ -8,7 +8,7 @@ function createBoard(){
   let size = getSizeFromUser()
   for (let i = 1; i <= size; i++) {
     for (let j = 1; j <= size; j++) {
-      createCell(size)
+      createCell()
     }
     goToNewLine()
   }
@@ -32,7 +32,7 @@ function getSizeFromUser() {
   return Number(size)
 }
 
-function createCell(size){
+function createCell(){
   const cell = document.createElement(`div`)
   const pixelsPerSide = GRID_PX_SIZE / size
   cell.addEventListener("mouseenter", () => cell.style.backgroundColor = `red`);

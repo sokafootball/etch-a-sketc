@@ -4,19 +4,25 @@ const GRID_PX_SIZE = 900
 resetButton.addEventListener(`click`, resetBoard)
 
 
-function createBoard(){
-  let size = getSizeFromUser()
+function createBoard(size){
   for (let i = 1; i <= size; i++) {
     for (let j = 1; j <= size; j++) {
-      createCell(size)
+      const cell = document.createElement(`div`)
+      const pixelsPerSide = GRID_PX_SIZE / size
+      cell.addEventListener("mouseenter", () => cell.style.backgroundColor = `red`);
+      cell.classList.add(`cell`)
+      cell.style.width = pixelsPerSide
+      cell.style.height = pixelsPerSide
+      grid.appendChild(cell)
     }
-    goToNewLine()
+    const br = document.createElement(`br`)
   }
 }
 
 function resetBoard(){
   deleteBoard()
-  createBoard()
+  let size = getSizeFromUser()
+  createBoard(size)
 }
 
 function deleteBoard(){
@@ -30,19 +36,4 @@ function getSizeFromUser() {
   let size
   do { size = prompt(`How many squares per side?`) } while (isNaN(Number(size)) || size == ``)
   return Number(size)
-}
-
-function createCell(size){
-  const cell = document.createElement(`div`)
-  const pixelsPerSide = GRID_PX_SIZE / size
-  cell.addEventListener("mouseenter", () => cell.style.backgroundColor = `red`);
-  cell.classList.add(`cell`)
-  cell.style.width = pixelsPerSide
-  cell.style.height = pixelsPerSide
-  grid.appendChild(cell)
-}
-
-function goToNewLine(){
-  const br = document.createElement(`br`)
-  grid.appendChild(br)
 }
