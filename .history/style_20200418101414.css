@@ -1,6 +1,5 @@
 :root{
   --shadow-size: 3px;
-  --main-color: hsla(90, 60%, 53%, 1);
 }
 
 .cell {
@@ -21,7 +20,7 @@
   margin-bottom: 30px;
   padding: 10px 30px;
   font-size: 15px;
-  background-color: var(--main-color);
+  background-color: hsla(90, 60%, 53%, 1);
   border: 0;
   box-shadow: var(--shadow-size) var(--shadow-size);
 }
@@ -33,6 +32,6 @@
 #reset-btn:active{
   box-shadow: none;
   position: relative;
-  left: var(--shadow-size);
-  top: var(--shadow-size);
+  left: 3px;
+  top: 3px;
 }

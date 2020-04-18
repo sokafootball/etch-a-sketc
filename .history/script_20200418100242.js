@@ -2,6 +2,15 @@ const grid = document.querySelector(`#grid-div`)
 const resetButton = document.querySelector(`#reset-btn`)
 const GRID_PX_SIZE = 840
 resetButton.addEventListener(`click`, resetBoard)
+resetButton.classList.add(`unclicked`)
+resetButton.addEventListener(`mouseenter`, () => {
+  console.log(`mouse over btn`)
+  resetButton.classList.add(`clicked`)
+})
+resetButton.addEventListener(`mouseleave`, () => {
+  console.log(`mouse over btn`)
+  resetButton.classList.remove(`clicked`)
+})
 
 
 function createBoard(){

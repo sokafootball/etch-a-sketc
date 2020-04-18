@@ -1,7 +1,12 @@
 const grid = document.querySelector(`#grid-div`)
 const resetButton = document.querySelector(`#reset-btn`)
 const GRID_PX_SIZE = 840
-resetButton.addEventListener(`click`, resetBoard)
+//resetButton.addEventListener(`click`, resetBoard)
+resetButton.classList.add(`shadowed-btn`)
+resetButton.addEventListener(`mousedown`, () => {
+  console.log(`mouse over btn`)
+  resetButton.classList.add(`clicked`)
+})
 
 
 function createBoard(){

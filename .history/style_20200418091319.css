@@ -1,0 +1,9 @@
+.cell {
+  background-color: black;
+  display: inline-block;
+}
+
+#main{
+  display:flex;
+  flex-direction: column;
+}

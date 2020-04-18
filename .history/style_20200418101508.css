@@ -21,7 +21,7 @@
   margin-bottom: 30px;
   padding: 10px 30px;
   font-size: 15px;
-  background-color: var(--main-color);
+  background-color: var(--main-color)
   border: 0;
   box-shadow: var(--shadow-size) var(--shadow-size);
 }

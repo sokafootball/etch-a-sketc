@@ -1,12 +1,9 @@
-:root{
-  --shadow-size: 3px;
-  --main-color: hsla(90, 60%, 53%, 1);
-}
-
 .cell {
   background-color: black;
   display: inline-block;
 }
+
+
 
 #main{
   align-items: center;
@@ -17,22 +14,18 @@
 
 #reset-btn{
   cursor: pointer;
-  font-weight: 800;
   margin-bottom: 30px;
   padding: 10px 30px;
   font-size: 15px;
-  background-color: var(--main-color);
+  background-color: hsla(90, 60%, 53%, 1);
   border: 0;
-  box-shadow: var(--shadow-size) var(--shadow-size);
+  box-shadow: 3px 3px;
 }
 
 #reset-btn:focus{
   outline-width: 0;
 }
 
-#reset-btn:active{
+.clicked{
   box-shadow: none;
-  position: relative;
-  left: var(--shadow-size);
-  top: var(--shadow-size);
 }

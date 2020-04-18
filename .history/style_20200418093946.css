@@ -1,0 +1,29 @@
+.cell {
+  background-color: black;
+  display: inline-block;
+}
+
+#main{
+  align-items: center;
+  display:flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+#reset-btn{
+  margin-bottom: 30px;
+  padding: 10px 30px;
+  font-size: 15px;
+  background-color: hsla(90, 60%, 53%, 1);
+  border: 0;
+  box-shadow: 3px 3px;
+}
+
+#reset-btn:focus{
+  margin-bottom: 30px;
+  padding: 10px 30px;
+  font-size: 15px;
+  background-color: hsla(90, 60%, 53%, 1);
+  border: 0;
+  box-shadow: 3px 3px;
+}

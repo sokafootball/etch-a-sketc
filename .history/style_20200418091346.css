@@ -1,0 +1,10 @@
+.cell {
+  background-color: black;
+  display: inline-block;
+}
+
+#main{
+  display:flex;
+  -ms-flex-align: center;
+  flex-direction: column;
+}

@@ -1,0 +1,15 @@
+.cell {
+  background-color: black;
+  display: inline-block;
+}
+
+#main{
+  align-items: center;
+  display:flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+#reset-btn{
+  margin-bottom: 50px;
+}
