@@ -1,7 +1,6 @@
 const grid = document.querySelector(`#grid-div`)
 const resetButton = document.querySelector(`#reset-btn`)
 const GRID_PX_SIZE = 840
-const MAX_GRID_SIZE = 150
 resetButton.addEventListener(`click`, resetBoard)
 
 
@@ -29,7 +28,7 @@ function deleteBoard(){
 
 function getSizeFromUser() {
   let size
-  do { size = prompt(`How many squares per side? (between 0 and ${MAX_GRID_SIZE})`) } while (isNaN(Number(size)) || size == `` || size > MAX_GRID_SIZE)
+  do { size = prompt(`How many squares per side? (between 0 and 840)`) } while (isNaN(Number(size)) || size == `` || size > 840)
   return Number(size)
 }
 

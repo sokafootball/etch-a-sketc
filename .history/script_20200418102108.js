@@ -1,7 +1,7 @@
 const grid = document.querySelector(`#grid-div`)
 const resetButton = document.querySelector(`#reset-btn`)
 const GRID_PX_SIZE = 840
-const MAX_GRID_SIZE = 150
+const MAX_GRID_SIZE = 200
 resetButton.addEventListener(`click`, resetBoard)
 
 
