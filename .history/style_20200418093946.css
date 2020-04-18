@@ -20,5 +20,10 @@
 }
 
 #reset-btn:focus{
-  outline-width: 0;
+  margin-bottom: 30px;
+  padding: 10px 30px;
+  font-size: 15px;
+  background-color: hsla(90, 60%, 53%, 1);
+  border: 0;
+  box-shadow: 3px 3px;
 }

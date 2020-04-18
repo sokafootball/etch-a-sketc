@@ -18,7 +18,3 @@
   border: 0;
   box-shadow: 3px 3px;
 }
-
-#reset-btn:focus{
-  outline-width: 0;
-}
