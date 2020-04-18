@@ -1,0 +1,43 @@
+:root{
+  --shadow-size: 3px;
+  --main-color: hsla(90, 60%, 53%, 1);
+}
+
+.cell {
+  background-color: black;
+  display: inline-block;
+  cursor: url(pencil.ico);
+}
+
+.hovered-cell{
+  background-color: var(--main-color);
+}
+
+#main{
+  align-items: center;
+  display:flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+#reset-btn{
+  cursor: pointer;
+  font-weight: 800;
+  margin-bottom: 30px;
+  padding: 10px 30px;
+  font-size: 15px;
+  background-color: var(--main-color);
+  border: 0;
+  box-shadow: var(--shadow-size) var(--shadow-size);
+}
+
+#reset-btn:focus{
+  outline-width: 0;
+}
+
+#reset-btn:active{
+  box-shadow: none;
+  position: relative;
+  left: var(--shadow-size);
+  top: var(--shadow-size);
+}
