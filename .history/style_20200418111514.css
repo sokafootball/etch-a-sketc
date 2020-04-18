@@ -4,11 +4,11 @@
 }
 
 footer{
-  width: 100%;
   position: absolute;
-  display: flex;
-  justify-content: center;
-  bottom: 10px;
+}
+
+p{
+  text-align: center;
 }
 
 .cell {

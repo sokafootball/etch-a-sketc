@@ -11,6 +11,10 @@ footer{
   bottom: 10px;
 }
 
+p{
+  text-align: center;
+}
+
 .cell {
   background-color: black;
   display: inline-block;
